@@ -46,8 +46,8 @@ bool enemy_is_ai;
 
 internal void
 simulate_game(Input* input, float dt) {
-	clear_screen(0xff5500);
 	draw_rect(0, 0, arena_half_size_x, arena_half_size_y, 0xffaa33);
+	draw_arena_borders(arena_half_size_x, arena_half_size_y, 0xff5500);
 
 	if (current_gamemode == GM_GAMEPLAY) {
 		float player_1_ddp = 0.f; // units per second
